@@ -14,10 +14,13 @@ RUN pipenv install --system --deploy --ignore-pipfile
 RUN mkdir -pv \
              resources/divinum-officium/web/www/missa/Latin \
              resources/divinum-officium/web/www/missa/English \
-             resources/divinum-officium/web/www/missa/Polski
+             resources/divinum-officium/web/www/missa/Polski \
+             resources/divinum-officium/web/www/missa/Deutsch
+
 COPY resources/divinum-officium/web/www/missa/Latin ./resources/divinum-officium/web/www/missa/Latin
 COPY resources/divinum-officium/web/www/missa/English ./resources/divinum-officium/web/www/missa/English
 COPY resources/divinum-officium/web/www/missa/Polski ./resources/divinum-officium/web/www/missa/Polski
+COPY resources/divinum-officium/web/www/missa/Deutsch ./resources/divinum-officium/web/www/missa/Deutsch
 COPY resources/propers ./resources/propers
 COPY resources/supplement ./resources/supplement
 COPY resources/divinum-officium-custom ./resources/divinum-officium-custom

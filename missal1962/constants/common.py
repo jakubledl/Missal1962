@@ -12,7 +12,8 @@ SUPPLEMENT_DIR = os.path.join(RESOURCES_DIR, 'supplement')
 SUNDAY = 6
 LANGUAGE_LATIN = 'la'
 LANGUAGE_ENGLISH = 'en'
-LANGUAGES = {'en': 'English', 'pl': 'Polski'}
+LANGUAGE_GERMAN = 'de'
+LANGUAGES = {'en': 'English', 'pl': 'Polski', 'de': 'Deutsch'}
 DIVOFF_LANG_MAP = {'la': 'Latin'}
 DIVOFF_LANG_MAP.update(LANGUAGES)
 TYPE_TEMPORA = 'tempora'
